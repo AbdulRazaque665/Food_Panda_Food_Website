@@ -29,7 +29,7 @@ const Header = () => {
   const userData = localStorage?.getItem("user");
   const user = JSON.parse(userData);
   useEffect(() => {
-    if (user) {
+    if (user ) {
       setAuth(true);
     }
   }, [user]);
@@ -42,7 +42,9 @@ const Header = () => {
           className="mx-24 max-sm:mx-0 max-md:mx-0 flex justify-between h-8"
         >
           <div>
+            <button onClick={()=> navigate("/home")}>
             <img src={Logo} className="w-40" alt="" />
+            </button>
           </div>
 
           {!auth ? (

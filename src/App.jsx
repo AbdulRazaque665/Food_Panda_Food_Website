@@ -6,12 +6,14 @@ import Products from "./components/Products/Products";
 import DeliveryPage from "./components/DeliveryPage/DeliveryPage";
 import Profile from "./components/Profile/Profile";
 import Home from "./Pages/Home/Home"
+import Header from "./components/Header/Header";
 
 
 
 
 const App = () => {
   return (
+    <>
     <Router>
       <Routes>
         <Route path="/" element={<Login />} />
@@ -22,6 +24,7 @@ const App = () => {
         <Route path="/home" element={<Home />} />
       </Routes>
     </Router>
+    </>
   );
 };
 

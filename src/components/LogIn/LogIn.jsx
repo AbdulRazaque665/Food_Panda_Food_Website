@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
-import Logo from "../../assets/title.png";
+import Logo from "../../assets/logo.webp";
 import { Alert, Snackbar } from "@mui/material";
 
 const Login = () => {
@@ -39,7 +39,9 @@ const Login = () => {
     <>
       <header className="container h-10">
         <nav className="mx-10">
+          <button onClick={() => navigate("/home")}>
           <img src={Logo} className="w-36" alt="" />
+          </button>
         </nav>
       </header>
 
