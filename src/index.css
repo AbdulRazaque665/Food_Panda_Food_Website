@@ -10,3 +10,11 @@
 *{
     font-family: "Open Sans", sans-serif;
 }
+.bg-img2{
+    background-image: url("./assets/Chef.webp");
+    background-size: cover;
+}
+.bg-img3{
+    background-image: url("./assets/corporate.webp");
+    background-size: cover;
+}

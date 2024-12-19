@@ -24,7 +24,7 @@ const Login = () => {
     ) {
       setSuccess(true);
       setTimeout(() => {
-        navigate("/home");
+        navigate("/");
       }, 1000);
     } else {
       setError(true);
@@ -39,7 +39,7 @@ const Login = () => {
     <>
       <header className="container h-10">
         <nav className="mx-10">
-          <button onClick={() => navigate("/home")}>
+          <button onClick={() => navigate("/")}>
           <img src={Logo} className="w-36" alt="" />
           </button>
         </nav>

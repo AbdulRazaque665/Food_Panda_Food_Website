@@ -20,7 +20,7 @@ const SignUp = () => {
 
     setOpen(true);
     setTimeout(() => {
-      navigate("/");
+      navigate("/login");
     }, 1000);
    
   };
@@ -30,7 +30,7 @@ const SignUp = () => {
     <>
       <header className="container h-10">
         <nav className="mx-10">
-          <button onClick={()=> navigate("/home")}>
+          <button onClick={()=> navigate("/")}>
           <img src={Logo} className="w-36" alt="" />
           </button>
         </nav>
@@ -99,7 +99,7 @@ const SignUp = () => {
           </div>
           <p className="text-md my-3 ">
             Already have an account?{" "}
-            <button onClick={() => navigate("/")}>Login</button>
+            <button onClick={() => navigate("/login")}>Login</button>
           </p>
           <button
             type="submit"

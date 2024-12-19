@@ -6,7 +6,8 @@ import Products from "./components/Products/Products";
 import DeliveryPage from "./components/DeliveryPage/DeliveryPage";
 import Profile from "./components/Profile/Profile";
 import Home from "./Pages/Home/Home"
-import Header from "./components/Header/Header";
+import City from "./Pages/City/City";
+
 
 
 
@@ -16,12 +17,13 @@ const App = () => {
     <>
     <Router>
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<Home />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/products" element={<Products />} />
         <Route path="/delivery/:productId" element={<DeliveryPage />} />
         <Route path="/profile" element={<Profile />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/city" element={<City />} />
       </Routes>
     </Router>
     </>
